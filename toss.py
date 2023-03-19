@@ -15,7 +15,7 @@ def check(name, amount):
     elif len(name) > 6: #7글자 이상 이름, 6번째까지만 표시
         name = name[:6]
 
-    url = "https://api-gateway.toss.im:11099/api-public/v3/cashtag/transfer-feed/received/list?inputWord=토스아이디"
+    url = "https://api-public.toss.im/api-public/v3/cashtag/transfer-feed/received/list?inputWord=토스아이디"
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36"}
     response = requests.get(url, headers=headers).json()
 
